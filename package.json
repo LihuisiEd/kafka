@@ -1,0 +1,12 @@
+{
+  "name": "kafka-example",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^4.2.0",
+    "kafka-node": "^5.0.1"
+  }
+}

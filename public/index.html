@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kafka Example</title>
+  <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+  <h1>Kafka Example</h1>
+  <ul id="messages"></ul>
+
+  <script>
+    var socket = io();
+    var messages = document.getElementById('messages');
+
+    socket.on('message', function (data) {
+      var li = document.createElement('li');
+      li.textContent = data;
+      messages.appendChild(li);
+    });
+  </script>
+</body>
+</html>
